@@ -1,5 +1,5 @@
 // Offline cache for the 3D Model Inspector. Bump VERSION to ship an update.
-const VERSION = 'inspector-260da72eeb';
+const VERSION = 'inspector-a03d59c983';
 const FILES = ['./', './index.html', './app.js', './manifest.webmanifest', './icon-192.png', './icon-512.png', './apple-touch-icon.png'];
 self.addEventListener('install', e => {
   e.waitUntil(caches.open(VERSION).then(c => c.addAll(FILES)).then(() => self.skipWaiting()));

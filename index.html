@@ -23,7 +23,7 @@
 html,body{margin:0;height:100%;background:var(--bg);color:var(--text);font:15px/1.4 -apple-system,BlinkMacSystemFont,"SF Pro Text","Segoe UI",Roboto,sans-serif;overflow:hidden;overscroll-behavior:none;-webkit-user-select:none;user-select:none}
 button{font:inherit;color:inherit;background:none;border:0;padding:0;cursor:pointer}
 input,select{font:inherit;color:inherit}
-#view{position:fixed;left:0;right:0;top:0;bottom:var(--sheet);transition:bottom .25s ease}
+#view{position:fixed;left:0;right:0;top:calc(var(--sat) + 54px);bottom:var(--sheet);transition:bottom .25s ease}
 #view canvas{display:block;width:100%;height:100%;touch-action:none}
 body.dragging #view{transition:none}
 
@@ -104,7 +104,7 @@ select.sel{height:34px;border-radius:9px;background:var(--panel2);border:1px sol
 .mr span{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 
 /* overlays */
-#empty{position:fixed;left:0;right:0;top:0;bottom:var(--sheet);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px;padding:24px;text-align:center;z-index:3;transition:bottom .25s ease}
+#empty{position:fixed;left:0;right:0;top:calc(var(--sat) + 54px);bottom:var(--sheet);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px;padding:24px;text-align:center;z-index:3;transition:bottom .25s ease}
 #empty .big{width:76px;height:76px;border-radius:22px;background:var(--panel2);display:flex;align-items:center;justify-content:center}
 #empty h2{margin:0;font-size:21px}
 #empty p{margin:0;color:var(--dim);font-size:14px;max-width:340px}
